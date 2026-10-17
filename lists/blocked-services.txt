@@ -1,0 +1,56 @@
+# Домены сервисов, заблокированных в России (октябрь 2026).
+# Используйте для раздельного туннелирования: эти домены — через VPN/прокси,
+# остальное — напрямую. Формат: один домен на строку, поддомены включены.
+# Источник статусов: docs/ru/01-blocked.md. Нашли устаревший домен — откройте issue.
+
+# YouTube
+youtube.com
+youtu.be
+youtube-nocookie.com
+ytimg.com
+googlevideo.com
+ggpht.com
+youtubei.googleapis.com
+
+# Instagram и Facebook (Meta)
+instagram.com
+cdninstagram.com
+facebook.com
+facebook.net
+fb.com
+fbcdn.net
+fbsbx.com
+
+# X (Twitter)
+x.com
+twitter.com
+twimg.com
+t.co
+
+# Discord
+discord.com
+discord.gg
+discordapp.com
+discordapp.net
+discord.media
+
+# WhatsApp
+whatsapp.com
+whatsapp.net
+wa.me
+
+# Viber
+viber.com
+
+# Signal
+signal.org
+whispersystems.org
+
+# LinkedIn
+linkedin.com
+licdn.com
+
+# Telegram (веб-версия и ссылки; приложения подключаются по IP — для них нужен прокси или VPN на всё приложение)
+telegram.org
+t.me
+telegram.me

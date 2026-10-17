@@ -1,0 +1,32 @@
+{
+  "_comment": "Пример правил маршрутизации для клиентов на ядре Xray (v2rayNG, V2RayTun и др.). Заблокированные сервисы — через прокси, российские адреса — напрямую, остальное — через прокси. Импортируйте в раздел маршрутизации клиента или перенесите правила вручную.",
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      { "type": "field", "ip": ["geoip:private"], "outboundTag": "direct" },
+      {
+        "type": "field",
+        "domain": [
+          "domain:youtube.com", "domain:youtu.be", "domain:ytimg.com", "domain:googlevideo.com", "domain:ggpht.com",
+          "domain:instagram.com", "domain:cdninstagram.com", "domain:facebook.com", "domain:fbcdn.net",
+          "domain:x.com", "domain:twitter.com", "domain:twimg.com",
+          "domain:discord.com", "domain:discord.gg", "domain:discordapp.com", "domain:discordapp.net", "domain:discord.media",
+          "domain:whatsapp.com", "domain:whatsapp.net", "domain:viber.com", "domain:signal.org",
+          "domain:linkedin.com", "domain:licdn.com", "domain:telegram.org", "domain:t.me"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "regexp:\\.ru$", "regexp:\\.su$", "regexp:\\.xn--p1ai$",
+          "domain:vk.com", "domain:vk.me", "domain:userapi.com",
+          "domain:yandex.net", "domain:yandex.com", "domain:yastatic.net", "domain:sberbank.com"
+        ],
+        "outboundTag": "direct"
+      },
+      { "type": "field", "ip": ["geoip:ru"], "outboundTag": "direct" },
+      { "type": "field", "network": "tcp,udp", "outboundTag": "proxy" }
+    ]
+  }
+}
