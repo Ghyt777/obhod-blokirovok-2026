@@ -26,6 +26,7 @@
 | 7 | [Telegram](docs/ru/07-telegram.md) | MTProto-прокси вместо VPN |
 | 8 | [FAQ](docs/ru/08-faq.md) | законность, мобильный интернет, бесплатные VPN |
 | 9 | [Раздельное туннелирование](docs/ru/09-split-tunneling.md) | банки напрямую, YouTube через VPN |
+| 10 | [Разбор частых проблем](docs/ru/10-troubleshooting.md) | видео YouTube не грузится, Discord не слышит, WhatsApp, белые списки |
 
 ## Готовые списки
 
